@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PivotPoint (PP) - A lightweight HTML5 jump host</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="desktop">
+    <div id="taskbar">
+      <div class="taskbar-item" onclick="openGuacRDP()">RDP</div>
+      <div class="taskbar-item" onclick="openGuacVNC()">VNC</div>
+      <div class="taskbar-item" onclick="openGuacSSH()">SSH</div>
+      <div class="taskbar-item" onclick="openGuacTelnet()">Telnet</div>
+      <div class="taskbar-item" onclick="openNotepad()">Notepad</div>
+    </div>
+  </div>
+
+  <!-- Guacamole client library -->
+  <!-- You can place the official minified file from Apache Guacamole here -->
+  <script src="guacamole/guacamole-common-min.js"></script>
+
+  <!-- Our scripts -->
+  <script src="desktop.js"></script>
+  <script src="notepad.js"></script>
+  <script src="guac-common.js"></script>
+  <script src="guac-rdp.js"></script>
+  <script src="guac-vnc.js"></script>
+  <script src="guac-ssh.js"></script>
+  <script src="guac-telnet.js"></script>
+</body>
+</html>
