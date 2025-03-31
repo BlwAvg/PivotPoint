@@ -55,6 +55,9 @@ pivotpoint/
 Certificates
 1. certs/server.key – your private key
 2. certs/server.crt – your certificate
+```
+opensll req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365
+````
 
 # Guacamole Backend
 This relies entirely on the hard work of the apache guac team.
