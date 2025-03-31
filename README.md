@@ -9,8 +9,6 @@ Running the Application
 If testing locally, run the openssl command mentioned above to create server.key and server.crt in certs/.
 If production, place your real TLS certs there.
 
-
-
 4. Install dependencies:
 ```
 cd pivotpoint
@@ -25,6 +23,10 @@ npm start
 6. Open your browser to https://localhost/ if running on port 443, or https://localhost:443/.
 
 If you used a self-signed cert, you’ll have to accept the browser’s warning.
+
+---
+TODO
+- Config file for Server Port, SSL crt/key names.
 
 ---
 Folder Structure
